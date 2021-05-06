@@ -17,12 +17,21 @@ Automated deployment of OVAs in to ESXi
  2.5. Select VM network and click next
  2.6. Click on Finish
 ```
-## 3. Configure the VM Network
+## 3. Configure Network
 ```shell
  3.1. Once the VM is deployed, select it and Power on, then configure the network by entering below details,
        IP address
        Subnet mask
        Gateway
+
+ 3.2. In cmd run nmcli con mod Wired\ connection\ 1 ipv4.addresses <GW SDK IP> ipv4.gateway 192.168.30.1 ipv4.dns 8.8.8.8 ipv4.method auto
+        Example: nmcli con mod Wired\ connection\ 1 ipv4.addresses 192.168.30.112/24 ipv4.gateway 192.168.30.1 ipv4.dns 8.8.8.8 ipv4.method auto
+        This will configure VM IP and Default Gateway
+
+    In cmd run ip -4 a to verify that correct IP is set
+
+    image
+       
 ```
 ## 4. Copy SDK and Workflow OVAs to ESXi datastore
 ```shell
