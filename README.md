@@ -30,7 +30,7 @@ Automated deployment of OVAs in to ESXi
 
     In cmd run ip -4 a to verify that correct IP is set
 
-    image
+![ConfigureNetwork-new-7May21](https://user-images.githubusercontent.com/70108899/114048052-7faec100-988a-11eb-819f-ddf211b916f6.png)
        
 ```
 ## 4. Copy SDK and Workflow OVAs to ESXi datastore
