@@ -23,7 +23,7 @@ Automated deployment of OVAs in to ESXi
         Example: nmcli con mod Wired\ connection\ 1 ipv4.addresses 192.168.30.112/24 ipv4.gateway 192.168.30.1 ipv4.dns 8.8.8.8 ipv4.method auto
         This will configure VM IP and Default Gateway
 
-    In cmd run ip -4 a to verify that correct IP is set
+ 3.2.In cmd run ip -4 a to verify that correct IP is set
        
 ```
 ![ConfigureNetwork-new-7May21](https://user-images.githubusercontent.com/70108899/114048052-7faec100-988a-11eb-819f-ddf211b916f6.png)
